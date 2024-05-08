@@ -273,6 +273,40 @@ li+a+.nav-item {
 }
 
 
+/* Form */
+.contenedor_contacto{
+    margin: 10px;
+    padding: 10px;
+    background-color: #edc891;
+    display: flex;
+    justify-content: center;
+}
+.contacto_informacion_empresa{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px;
+    padding: 10px;
+    background-color: #edc891;
+    display: flex;
+    justify-content:space-evenly
+}
+
+.contenedor_formulario_contacto{
+    margin: 20px;
+    padding: 20px;
+    background-color: #edc891;
+
+}
+
+.mapa{
+    margin: 10px;
+    padding: 10px;
+    background-color: #edc891;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+
 /* FOOTER STYLES */
 .custom-footer {
     background-color: var(--dark-bg-solid);
