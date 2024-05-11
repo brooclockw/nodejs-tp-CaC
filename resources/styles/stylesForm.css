@@ -1,3 +1,67 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Raleway:wght@300..700&display=swap');
+
+/* VARIABLES */
+:root {
+    /* Palette */
+    --primary-solid: #FF3333;
+    --primary-900: rgba(255, 51, 51, 0.9);
+    --primary-500: rgba(255, 51, 51, 0.5);
+    --primary-300: rgba(255, 51, 51, 0.3);
+    --secondary-solid: #1D84B5;
+    --secondary-900: rgba(29, 132, 181, 0.9);
+    --secondary-500: rgba(29, 132, 181, 0.5);
+    --secondary-300: rgba(29, 132, 181, 0.3);
+    --dark-solid: #1F1F1F;
+    --dark-900: rgba(31, 31, 31, 0.9);
+    --dark-500: rgba(31, 31, 31, 0.5);
+    --dark-300: rgba(31, 31, 31, 0.3);
+    --dark-bg-solid: #30343F;
+    --light-bg-solid: #FAFAFF;
+    --light-font-solid: #FFFFFF;
+
+    /* Typography */
+    --base-font: 'Inter', sans-serif;
+    --alternative-font: 'Raleway', sans-serif;
+
+    /* Font-sizes */
+    --font-display: 4.6rem;
+    --font-jumbo: 3.8rem;
+    --font-xlarge: 3rem;
+    --font-large: 2.4rem;
+    --font-medium: 1.8rem;
+    --font-small: 1.6rem;
+    --font-xsmall: 1.4rem;
+
+    /* Spacings */
+    --spacing-128: 12.8rem;
+    --spacing-68: 6.8rem;
+    --spacing-36: 3.6rem;
+    --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-20: 2rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: 0.8rem;
+}
+
+/* RESET */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--base-font);
+    font-size: 15px;
+    color:#9c8260;
+    margin-bottom: 0;
+    border: none;
+    height: 100%;
+}
 /* HEADER */
 header {
     background-color: var(--dark-bg-solid);
@@ -10,7 +74,6 @@ header {
 
 li+a+.nav-item {
     color: var(--light-font-solid) !important;
-
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -22,17 +85,14 @@ li+a+.nav-item {
     text-transform: uppercase;
     font-size: 15px;
 }
+.body{
+    background-color: rgb(237, 248, 210);
+}
 
 
 #user-icon {
     width: 28px;
     height: auto;
-}
-
-
-
-.body{
-    background-color: aliceblue;
 }
 
 .contenedor_contacto{
@@ -68,9 +128,22 @@ li+a+.nav-item {
     font-size: larger;
 }
 
+.footer{
+    display: flex;
+    justify-content:space-evenly;
+    background-color: #e1c392;
+    font-size: 20px;
+}
+
+.icono{
+    display: flex;
+    justify-content: space-around;
+    size: 2px;
+
+}
 /* FOOTER STYLES */
 .custom-footer {
-    background-color: var(--dark-bg-solid);
+    background-color:#e1c392;
     margin-bottom: 0;
     font-size: var(--font-small);
     text-justify: center;
