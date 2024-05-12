@@ -309,7 +309,15 @@ li+a+.nav-item {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px
+    }
+
+    .mobile-logo {
+        width: auto;
+    }
+
     .banner-principal-text {
         font-size: var(--font-large);
         font-weight: bolder;
@@ -399,9 +407,19 @@ li+a+.nav-item {
         font-weight: bold;
     }
 
+    .footer-link {
+        font-size: var(--font-xxsmall);
+    }
 
     .copyright-text {
         font-size: var(--font-xxsmall) !important;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .navbar {
+        padding: 15px
     }
 
 }
