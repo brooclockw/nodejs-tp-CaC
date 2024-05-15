@@ -417,9 +417,71 @@ li+a+.nav-item {
 
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 767px) {
     .navbar {
         padding: 15px
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .navbar {
+        padding: 5px
+    }
+
+    .nav-link {
+        font-size: var(--font-xsmall) !important;
+    }
+    .contact-navlink, .login-navlink{
+        display: none !important;
+    }
+
+    .cart-icon {
+        display: none !important;
+    }
+
+    .banner-principal-text {
+        font-size: var(--font-jumbo);
+        font-weight: bolder;
+    }
+
+    .banner-text-description {
+        font-size: var(--font-small);
+    }
+
+    .btn-banner-text {
+        font-size: var(--font-xsmall);
+    }
+
+    .text-main-section {
+        width: 40vw;
+        height: auto;
+        padding: 0 10px;
+        margin-bottom: 10px;
+    }
+
+    .img-main {
+        width: 40vw;
+    }
+
+    .tittle-main-item {
+        font-size: var(--font-xlarge);
+        font-weight: bolder;
+    }
+
+    .text-main-section .description-main-item {
+        font-size: var(--font-small);
+    }
+
+    .see-collection {
+        font-size: var(--font-xsmall);
+        padding: 10px 15px;
+    }
+
+    .releases-tittle {
+        font-size: var(--font-xlarge);
+        font-weight: bolder;
+
     }
 
 }
