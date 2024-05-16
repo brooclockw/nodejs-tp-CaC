@@ -56,44 +56,12 @@
 
 html {
     font-family: var(--base-font);
-    font-size: 10px;
-    color: var(--dark-solid);
+    font-size: 15px;
+  
     margin-bottom: 0;
     border: none;
     height: 100%;
 }
-
-a {
-    text-decoration: none;
-    font-family: inherit;
-    color: inherit;
-}
-
-header,
-footer {
-    font-family: var(--alternative-font);
-    color: var(--light-font-solid);
-}
-
-ul,
-ol {
-    list-style-type: none;
-}
-
-p {
-    font-size: 1.8em;
-    /* 1.8em=18px */
-}
-
-img {
-    width: 100%;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 /* HEADER */
 header {
     background-color: var(--dark-bg-solid);
@@ -106,7 +74,6 @@ header {
 
 li+a+.nav-item {
     color: var(--light-font-solid) !important;
-
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -118,6 +85,9 @@ li+a+.nav-item {
     text-transform: uppercase;
     font-size: 15px;
 }
+.body{
+    background-color: rgb(237, 248, 210);
+}
 
 
 #user-icon {
@@ -125,99 +95,20 @@ li+a+.nav-item {
     height: auto;
 }
 
-/* BANNER SECTION */
-#banner {
-    margin-top: 0px;
-
-}
-
-#wrap-banner {
-    /* width: 100vw;  genera scroll lateral por el background-size cover*/
-    padding: 70px 0px;
+.contenedor_contacto{
+    margin: 0px;
+    padding: 10px;
+    color: var(--light-font-solid);
     display: flex;
-    align-items: flex-start;
     justify-content: center;
-    flex-direction: column;
+    border-bottom: 1px solid;
     background: url(../images/funkos-banner-1.png);
     background-size: cover;
     background-origin: border-box;
     background-repeat: no-repeat;
-
-}
-
-.banner-text {
-    margin-top: 10px;
-    /* transform: translateY(-220px); */
-    color: var(--light-font-solid);
-    margin-left: 45px;
-}
-
-.banner-principal-text {
-    font-size: var(--font-jumbo);
-    font-weight: bold;
-    font-family: var(--base-font), var(--alternative-font);
-}
-
-.banner-text-description {
-    font-size: var(--font-xsmall);
-    font-family: var(--base-font);
-}
-
-#btn-banner {
-    /* width: 15vw;
-        height: 35px; */
-    display: inline-block;
-    margin-top: 5px;
-    padding: 4px 35px;
-    border-radius: 45px;
-    background-color: var(--light-bg-solid);
-    border: none;
-}
-
-#btn-banner a {
-    text-decoration: none;
-    color: var(--dark-solid);
-    font-family: var(--alternative-font);
-    font-size: var(--font-small);
-    font-weight: bold;
-}
-
-#btn-banner a:visited {
-    background-color: var(--dark-solid);
-    text-decoration: none;
-    color: var(--dark-solid);
-}
-
-/* MAIN SECTION/SECCION PRINCIPAL */
-.main-section {
-    display: flex;
-    height: auto;
+    height: 20vh;
     align-items: center;
-    justify-content: space-evenly;
-
 }
-
-.img-main {
-    height: auto;
-    width: 50vw;
-
-}
-
-.text-main-section {
-    width: 50vw;
-    height: auto;
-    padding: 0 20px;
-    margin-bottom: 10px;
-}
-
-.text-main-section .tittle-main-item {
-    font-size: var(--font-display);
-}
-
-.text-main-section .description-main-item {
-    font-size: var(--font-small);
-}
-
 .see-collection {
     /* width: 15vw;
     height: 35px; */
@@ -236,52 +127,70 @@ li+a+.nav-item {
     text-decoration: none;
     color: var(--light-font-solid);
 }
-
-.line-section {
-    height: 3px;
-    background-color: var(--primary-solid);
+.see-collection:hover{
+    background-color: #30343F;
+}
+.contacto_informacion_empresa{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px;
+    padding: 10px;
+    
+    display: flex;
+    justify-content:space-evenly
 }
 
-.middle-section {
-    flex-direction: row-reverse;
+.contenedor_formulario_contacto{
+
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid !important;
+   
+    box-shadow: 2px 1px 1px #c2c2c2;
+
 }
 
-.new-releases {
-    width: 100wv;
+.mapa{
+    margin: 10px;
+    padding: 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
 }
 
-.releases-tittle {
-    font-size: var(--font-display);
-    padding: 15px 15px;
+footer {
+    font-family: var(--alternative-font);
+    color: var(--light-font-solid);
 }
 
-.text-releases {
-    text-decoration: none;
-    color: var(--dark-solid);
-}
+.icono{
+    display: flex;
+    justify-content: space-around;
+    size: 2px;
 
-.text-collection {
-    font-size: var(--font-xsmall);
-    color: var(--dark-bg-solid);
 }
-
-.name-item {
-    font-size: var(--font-medium);
-    font-family: var(--base-font);
-    color: var(--dark-solid);
-    font-weight: bold;
-}
-
-.ctas-item {
-    color: var(--secondary-solid);
+/* FOOTER STYLES */
+.custom-footer {
+    
+    margin-bottom: 0;
     font-size: var(--font-small);
-    font-weight: bolder;
+    text-justify: center;
+    padding-top: 10px;
+
 }
 
-.releases-articles-sm {
-    display: none;
+.custom-footer p {
+    font-size: var(--font-xsmall);
+    text-justify: center;
+    padding: 8px;
 }
 
+.custom-text-footer {
+    margin-left: 15px;
+    font-weight: normal;
+}
 /* FOOTER STYLES */
 .custom-footer {
     background-color: var(--dark-bg-solid);
@@ -301,4 +210,8 @@ li+a+.nav-item {
 .custom-text-footer {
     margin-left: 15px;
     font-weight: normal;
+}
+ul,
+ol {
+    list-style-type: none;
 }
