@@ -3,33 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="../icons/buscar.png" />
+    <link rel="icon" type="image/x-icon" href="resources/icons/buscar.png" />
     <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
     crossorigin="anonymous"
   />
-    <link rel="stylesheet" href="../styles/about.css" />
-    <title>About US</title>
+    <link rel="stylesheet" href="resources/styles/styles.css" />
+    <title>TP CAC FRONT</title>
   </head>
   <body>
     <body>
       <!-- INICIO HEADER con BOOTSTRAP -->
       <header class="sticky-top">
-        <nav class="navbar navbar-dark navbar-expand-md">
-          <div class="container-fluid d-flex align-items-center">
-            <a href="../../index.html">
+        <nav class="navbar navbar-dark navbar-expand-md justify-content-evenly">
+          <div class="container-fluid d-flex align-items-center justify-content-sm-between">
+            <a href="./index.html">
               <img
-                src="../images/branding/logo_light_horizontal.svg"
+                src="./resources/images/branding/logo_light_horizontal.svg"
                 alt="Isologotipo de la marca Funkoshop"
                 width="auto"
                 height="25"
-                class="d-inline-block"
+                class="d-inline-block mobile-logo"
               />
             </a>
             <button
-              class="navbar-toggler align-items-center"
+              class="navbar-toggler align-items-center "
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -46,21 +46,21 @@
               <div class="d-flex row align-items-center">
                 <ul class="navbar-nav me-2 align-items-center">
                   <li class="nav-item custom-navtext">
-                    <a class="nav-link" aria-current="page" href="../../index.html"
+                    <a class="nav-link" aria-current="page" href="./index.html"
                       >HOME</a
                     >
                   </li>
-                  <li class="nav-item custom-navtext">
-                    <a class="nav-link" href="../pages/contact.html">CONTACTO</a>
+                  <li class="nav-item custom-navtext contact-navlink">
+                    <a class="nav-link" href="./resources/pages/contact.html">CONTACTO</a>
+                  </li>
+                  <li class="nav-item custom-navtext ">
+                    <a class="nav-link" href="./resources/pages/shop.html">SHOP</a>
+                  </li>
+                  <li class="nav-item custom-navtext login-navlink">
+                    <a class="nav-link" href="./resources/pages/login.html">LOGIN</a>
                   </li>
                   <li class="nav-item custom-navtext">
-                    <a class="nav-link" href="../pages/shop.html">SHOP</a>
-                  </li>
-                  <li class="nav-item custom-navtext">
-                    <a class="nav-link" href="../pages/login.html">LOGIN</a>
-                  </li>
-                  <li class="nav-item custom-navtext">
-                    <a class="nav-link" href="../pages/contacto.html">FAQ's</a>
+                    <a class="nav-link" href="./resources/pages/contacto.html">FAQ's</a>
                   </li>
                   <li class="nav-item custom-navtext dropdown">
                     <a
@@ -71,7 +71,7 @@
                       aria-expanded="false"
                     >
                       <img
-                        src="../images/icons/person-circle-outline.svg"
+                        src="./resources/images/icons/person-circle-outline.svg"
                         alt="user icon"
                         id="user-icon"
                       />
@@ -98,10 +98,10 @@
                       </li>
                     </ul>
                   </li>
-                  <li class="nav-item custom-navtext">
-                    <a class="nav-link" href="../pages/cart.html">
+                  <li class="nav-item custom-navtext cart-icon">
+                    <a class="nav-link" href=".resources/pages/cart.html">
                       <img
-                        src="../images/icons/cart-icon.svg"
+                        src="./resources/images/icons/cart-icon.svg"
                         alt="icono de carrito"
                         width="auto"
                         height="16"
@@ -132,8 +132,13 @@
         <section id="banner">
           <article id="wrap-banner">
             <div class="banner-text">
-              <h3 class="banner-principal-text">About Us</h3>
-              
+              <h3 class="banner-principal-text">Nuevos Ingresos</h3>
+              <p class="banner-text-description">
+                Descubrí el próximo Funko Pop de tu colección
+              </p>
+              <button class="btn-banner-text" type="button" id="btn-banner">
+                <a class="btn-banner-text" href="./resources/pages/shop.html">Shop</a>
+              </button>
             </div>
           </article>
         </section>
@@ -141,102 +146,82 @@
   
         <!-- SECCION PRINCIPAL DE LA WEB -->
         <main>
-            <h1> Staff de funkoshop</h1>
-            <section class="main-section">
-                <article class="text-main-section">
-                  <h3 class="tittle-main-item">Batman "The Dark Night"</h3>
-                  <p class="description-main-item">
-                    Siempre vigilando que todos los clientes queden satisfechos con sus compras. Aunque atienda con voz gruesa, se ganó el cariño de todos.
-                  </p>
-                  <div class="line-section"></div>
-                </article>
-      
-                <picture class="img-main">
-                  <img
-                    src="../images/staff/66615-1.png"
-                    alt="Figura coleccionable Funko de Batman the dark night"
-                  />
-                </picture>
-            </section>
-         
-          <section class="main-section middle-section">
+          <section class="main-section">
             <article class="text-main-section">
-              <h3 class="tittle-main-item">Wonder Woman</h3>
+              <h3 class="tittle-main-item">Star Wars </h3>
               <p class="description-main-item">
-                Todos siempre comentan, que la atención de Wonder Woman es magnífica. Resuelve todas las dudas y siempre tiene algo nuevo para recomendar.
+                Disfruta de una saga que sigue agregando personajes a su
+                colección.
               </p>
               <div class="line-section"></div>
-
+              <a class="see-collection" href="">VER COLECCIÓN</a>
             </article>
   
             <picture class="img-main">
               <img
-                src="../images/staff/WonderWoman.png"
-                alt="Figura coleccionable Funko de Wonder Woman"
+                src="./resources/images/star-wars/baby-yoda-1.webp"
+                alt="Figura coleccionable Funko de Grogu de la serie The Mandalorian"
+              />
+            </picture>
+          </section>
+          <section class="main-section middle-section">
+            <article class="text-main-section">
+              <h3 class="tittle-main-item">POKEMON INDIGO</h3>
+              <p class="description-main-item">
+                Atrapa todos los que puedas y disfruta de una colección llena de
+                amigos.
+              </p>
+              <div class="line-section"></div>
+              <a class="see-collection" href="./resources/pages/shop.html">VER COLECCIÓN</a>
+            </article>
+  
+            <picture class="img-main">
+              <img
+                src="./resources/images/pokemon/vulpix-1.webp"
+                alt="Figura coleccionable Funko de Vulpix de la serie Pokemon"
               />
             </picture>
           </section>
           <section class="main-section">
             <article class="text-main-section">
-              <h3 class="tittle-main-item">IRON MAN</h3>
+              <h3 class="tittle-main-item">HARRY POTTER</h3>
               <p class="description-main-item">
-                No hay quién como Iron Man, para ayudar a quienes necesiten dentro del local.
-                Es sobretodo, nuestro gurú en productos clásicos.
+                Revive los recuerdos de una saga llena de magia y encanto.
               </p>
               <div class="line-section"></div>
+              <a class="see-collection" href="./resources/pages/shop.html">VER COLECCIÓN</a>
             </article>
             <picture class="img-main">
               <img
-                src="../images/staff/IronMan.png"
-                alt="Figura coleccionable Funko Iron Man"
-              />
-            </picture>
-          </section>
-          <section class="main-section middle-section">
-            <article class="text-main-section">
-              <h3 class="tittle-main-item">Cheetara</h3>
-              <p class="description-main-item">
-                Con sus sentidos super agudizados, Cheetara siempre acierta con recomendar lo que los clientes están buscando.
-              </p>
-              <div class="line-section"></div>
-
-            </article>
-  
-            <picture class="img-main">
-              <img
-                src="../images/staff/cheetara.png"
-                alt="Figura coleccionable Funko de Cheetara - Thundercats"
+                src="./resources/images/harry-potter/snape-patronus-1.webp"
+                alt="Figura coleccionable Funko del Patronus de Snape en la pelicula de Harry Potter"
               />
             </picture>
           </section>
         </main>
         <!-- FIN DE LA SECCION PRINCIPAL DE LA WEB  -->
   
-        <!-- INICIO DÓNDE ENCONTRARNOS -->
-      
+        <!-- INICIO LANZAMIENTOS -->
         <section class="new-releases container-fluid">
-          <h2 class="releases-tittle">Dónde Encontrarnos</h2>
-           
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9991.660880716849!2d-93.29409139964994!3d37.20924678107543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1715815222922!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-      <h2 class="releases-tittle">O también podés dirigirte a nuestros otros puntos de venta:</h2>
-          <ul class="d-flex row container-fluid justify-content-evenly">
-            <li class="col-4">
-              <article>
+          <h2 class="releases-tittle">Últimos lanzamientos</h2>
+          <ul class="d-flex row container-fluid justify-content-evenly releases-articles">
+            <li class="col-4 ">
+              <article class="">
                 <a
                   href="./pages/item.html"
-                  class="d-flex container-fluid row justify-content-center text-releases"
+                  class="d-flex container-fluid row justify-content-center releases-items text-releases"
                 >
-                  <picture class="col-12">
+                  <picture class="col-12 img-releases">
                     <img
-                      src="../images/icons/map-pin.svg"
-                      alt="Pin to map"
+                      src="./resources/images/star-wars/trooper-1.webp"
+                      alt="Figura coleccionable Funko de un  Stormtrooper"
                     />
                   </picture>
-                  <div class="col-12">
-                    
-                    <h4 class="name-item">Av.Siempre Viva 743</h4>
-                    
-                    <p class="ctas-item">Tel:+54-11-0303456</p>
+                  <div class="col-12 tittle-releases">
+                    <p class="text-collection">STAR WARS</p>
+                    <h4 class="name-item">STORMTROOPER LIGHTSABER</h4>
+                    <p>$ 1799,99</p>
+                    <p class="ctas-item">3 CUOTAS SIN INTERÉS</p>
                   </div>
                 </a>
               </article>
@@ -249,20 +234,67 @@
                 >
                   <picture class="col-12">
                     <img
-                      src="../images/icons/map-pin.svg"
-                      alt="Pin to map"
+                      src="./resources/images/pokemon/pidgeotto-1.webp"
+                      alt="Figura coleccionable Funko de Pidgeotto"
                     />
                   </picture>
                   <div class="col-12">
-                    
-                    <h4 class="name-item">Calle Falsa 123</h4>
-                    
-                    <p class="ctas-item">Tel:+54-11-223242</p>
+                    <p class="text-collection">POKEMON</p>
+                    <h4 class="name-item">PIDGEOTTO</h4>
+                    <p>$ 1799,99</p>
+                    <p class="ctas-item">3 CUOTAS SIN INTERÉS</p>
                   </div>
                 </a>
               </article>
             </li>
-            
+            <li class="col-4">
+              <article>
+                <a
+                  href="./pages/item.html"
+                  class="d-flex container-fluid row justify-content-center text-releases"
+                >
+                  <picture class="col-12">
+                    <img
+                      src="./resources/images/harry-potter/luna-1.webp"
+                      alt="Figura coleccionable Funko de Luna Lovegood"
+                    />
+                  </picture>
+                  <div class="col-12">
+                    <p class="text-collection">HARRY POTTER</p>
+                    <h4 class="name-item">LUNA LOVEGOOD LION MASK</h4>
+                    <p>$ 1799,99</p>
+                    <p class="ctas-item">3 CUOTAS SIN INTERÉS</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+          </ul>
+
+
+          <!-- ------ NUEVOS LANZAMIENTOS PARA MOBILE WEB SITE-------------------- -->
+
+          <ul class="releases-articles-sm container-fluid">
+            <li class="d-flex container-fluid">
+              <article class="col-12">
+                <a
+                  href="./pages/item.html"
+                  class="d-flex container-fluid column justify-content-center releases-items text-releases"
+                >
+                  <picture class="col-5 img-releases">
+                    <img
+                      src="./resources/images/star-wars/trooper-1.webp"
+                      alt="Figura coleccionable Funko de un  Stormtrooper"
+                    />
+                  </picture>
+                  <div class="col-7 tittle-releases">
+                    <p class="text-collection">STAR WARS</p>
+                    <h4 class="name-item">STORMTROOPER LIGHTSABER</h4>
+                    <p class="price-item">$ 1799,99</p>
+                    <p class="ctas-item">3 CUOTAS SIN INTERÉS</p>
+                  </div>
+                </a>
+              </article>
+            </li>
           </ul>
         </section>
         <!--FIN LANZAMIENTOS -->
@@ -274,21 +306,21 @@
             <nav class="d-flex row align-items-center container-fluid">
               <ul class="mb-0 col-8 custom-text-footer">
                 <li class="nav-item custom-navtext">
-                  <a class="nav-link" href="">SHOP</a>
+                  <a class="nav-link footer-link" href="">SHOP</a>
                 </li>
                 <li class="nav-item custom-navtext">
-                  <a class="nav-link" href="">REGISTRARSE</a>
+                  <a class="nav-link footer-link" href="">REGISTRARSE</a>
                 </li>
                 <li class="nav-item custom-navtext">
-                  <a class="nav-link" href="">LOGIN</a>
+                  <a class="nav-link footer-link" href="">LOGIN</a>
                 </li>
                 <li class="nav-item custom-navtext">
-                  <a class="nav-link" href="">CONTACTO</a>
+                  <a class="nav-link footer-link" href="">CONTACTO</a>
                 </li>
               </ul>
               <picture class="d-inline-block col-3 align-items-end">
                 <img
-                  src="../images/branding/isotype.svg"
+                  src="./resources/images/branding/isotype.svg"
                   alt="Isotipo de la marca Funkoshop"
                   width="auto"
                   height="85"
@@ -297,7 +329,7 @@
               </picture>
             </nav>
           </section>
-          <p class="container-fluid row justify-content-center">
+          <p class="container-fluid row justify-content-center copyright-text">
             All rights reserved 2023 - Funkoshop & copyright
           </p>
         </div>
