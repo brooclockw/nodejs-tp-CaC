@@ -199,14 +199,13 @@ li+a+.nav-item {
 
 .img-main {
     height: auto;
-    width: 50vw;
+    width: 40vw;
 
 }
 
 .text-main-section {
     width: 50vw;
     height: auto;
-    padding: 0 20px;
     margin-bottom: 10px;
 }
 
@@ -227,7 +226,6 @@ li+a+.nav-item {
     border-radius: 45px;
     background-color: var(--dark-solid);
     text-decoration: none;
-    font-size: var(--font-xsmall);
     color: var(--light-font-solid);
 }
 
@@ -244,10 +242,6 @@ li+a+.nav-item {
 
 .middle-section {
     flex-direction: row-reverse;
-}
-
-.new-releases {
-    width: 100wv;
 }
 
 .releases-tittle {
@@ -278,9 +272,6 @@ li+a+.nav-item {
     font-weight: bolder;
 }
 
-.releases-articles-sm {
-    display: none;
-}
 
 /* FOOTER STYLES */
 .custom-footer {
@@ -301,4 +292,11 @@ li+a+.nav-item {
 .custom-text-footer {
     margin-left: 15px;
     font-weight: normal;
+}
+h1{
+    text-align: center;
+    color: black;
+   text-shadow: #30343F;
+   width: 100%;
+   
 }
