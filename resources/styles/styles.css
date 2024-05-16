@@ -310,6 +310,28 @@ li+a+.nav-item {
 
 
 @media (max-width: 480px) {
+    #card-shop {
+        padding: 0%;
+        width: 95%;
+      }
+      #card-shop .row {
+            flex-wrap: wrap;
+            display: block !important;
+            height: 30% !important;
+      }
+      #card-shop .col-4 {
+            flex: 0 0 100%;
+            max-width: 100%;
+            width: 95% !important;
+            
+      }
+     
+      #toggleAsideButton {
+            display: block !important;
+      }
+      .d-none{
+          display: block !important;
+      }
     .navbar {
         padding: 10px
     }
@@ -421,14 +443,47 @@ li+a+.nav-item {
     .navbar {
         padding: 15px
     }
-
+    #card-shop {
+        padding: 0%;
+        width: 95%;
+      }
+      #card-shop .row {
+            flex-wrap: wrap;
+            display: block !important;
+            height: 30% !important;
+      }
+      #card-shop .col-4 {
+            flex: 0 0 100%;
+            max-width: 100%;
+            width: 95% !important;
+            
+      }
+     
+      #toggleAsideButton {
+            display: block !important;
+      }
+      .d-none{
+          display: block !important;
+      }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
+    .col-md-4{
+        flex: 0 0 auto !important;
+        width: 25% !important;
+    }
+    .d-none{
+        display: inline-block !important;
+    }
+    
+    
+    #toggleAsideButton {
+        display: none !important;
+    }
     .navbar {
         padding: 5px
     }
-
+    
     .nav-link {
         font-size: var(--font-xsmall) !important;
     }
@@ -484,4 +539,8 @@ li+a+.nav-item {
 
     }
 
+}
+
+.see-collection:hover{
+    background-color: #30343F;
 }
