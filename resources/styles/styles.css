@@ -32,6 +32,7 @@
     --font-medium: 1.8rem;
     --font-small: 1.6rem;
     --font-xsmall: 1.4rem;
+    --font-xxsmall: 0.8rem;
 
     /* Spacings */
     --spacing-128: 12.8rem;
@@ -199,13 +200,14 @@ li+a+.nav-item {
 
 .img-main {
     height: auto;
-    width: 40vw;
+    width: 50vw;
 
 }
 
 .text-main-section {
     width: 50vw;
     height: auto;
+    padding: 0 20px;
     margin-bottom: 10px;
 }
 
@@ -226,6 +228,7 @@ li+a+.nav-item {
     border-radius: 45px;
     background-color: var(--dark-solid);
     text-decoration: none;
+    font-size: var(--font-xsmall);
     color: var(--light-font-solid);
 }
 
@@ -242,6 +245,10 @@ li+a+.nav-item {
 
 .middle-section {
     flex-direction: row-reverse;
+}
+
+.new-releases {
+    width: 100wv;
 }
 
 .releases-tittle {
@@ -272,6 +279,9 @@ li+a+.nav-item {
     font-weight: bolder;
 }
 
+.releases-articles-sm {
+    display: none;
+}
 
 /* FOOTER STYLES */
 .custom-footer {
@@ -292,4 +302,245 @@ li+a+.nav-item {
 .custom-text-footer {
     margin-left: 15px;
     font-weight: normal;
+}
+
+.copyright-text {
+    padding: 20px 10px !important;
+}
+
+
+@media (max-width: 480px) {
+    #card-shop {
+        padding: 0%;
+        width: 95%;
+      }
+      #card-shop .row {
+            flex-wrap: wrap;
+            display: block !important;
+            height: 30% !important;
+      }
+      #card-shop .col-4 {
+            flex: 0 0 100%;
+            max-width: 100%;
+            width: 95% !important;
+            
+      }
+     
+      #toggleAsideButton {
+            display: block !important;
+      }
+      .d-none{
+          display: block !important;
+      }
+    .navbar {
+        padding: 10px
+    }
+
+    .mobile-logo {
+        width: auto;
+    }
+
+    .banner-principal-text {
+        font-size: var(--font-large);
+        font-weight: bolder;
+    }
+
+    .banner-text-description {
+        font-size: var(--font-xsmall);
+    }
+
+    .btn-banner-text {
+        font-size: var(--font-xxsmall);
+    }
+
+    .main-section {
+        margin-top: 20px;
+    }
+
+    .text-main-section {
+        width: 40vw;
+        height: auto;
+        padding: 0 10px;
+        margin-bottom: 10px;
+    }
+
+    .img-main {
+        width: 60vw;
+    }
+
+    .text-main-section .tittle-main-item {
+        font-size: var(--font-large);
+        font-weight: bolder;
+    }
+
+    .text-main-section .description-main-item {
+        font-size: var(--font-xsmall);
+    }
+
+    .see-collection {
+        font-size: var(--font-xxsmall);
+        padding: 10px 15px;
+    }
+
+    .releases-tittle {
+        font-size: var(--font-large);
+        font-weight: bolder;
+
+    }
+
+    .releases-articles {
+        display: none !important;
+        flex-direction: column;
+    }
+
+    /* .releases-items {
+        display: flex !important;
+        flex-direction: row;
+        width: 100vw;
+    } */
+
+    .releases-articles-sm {
+        display: flex;
+        width: 100vw;
+    }
+
+    .tittles-releases {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-collection {
+        font-size: var(--font-xxsmall);
+    }
+
+    .name-item {
+        font-size: var(--font-medium);
+        font-weight: bolder;
+    }
+
+    .price-item {
+        font-size: var(--font-medium);
+    }
+
+    .ctas-item {
+        font-size: var(--font-xxsmall);
+        font-weight: bold;
+    }
+
+    .footer-link {
+        font-size: var(--font-xxsmall);
+    }
+
+    .copyright-text {
+        font-size: var(--font-xxsmall) !important;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .navbar {
+        padding: 15px
+    }
+    #card-shop {
+        padding: 0%;
+        width: 95%;
+      }
+      #card-shop .row {
+            flex-wrap: wrap;
+            display: block !important;
+            height: 30% !important;
+      }
+      #card-shop .col-4 {
+            flex: 0 0 100%;
+            max-width: 100%;
+            width: 95% !important;
+            
+      }
+     
+      #toggleAsideButton {
+            display: block !important;
+      }
+      .d-none{
+          display: block !important;
+      }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .col-md-4{
+        flex: 0 0 auto !important;
+        width: 25% !important;
+    }
+    .d-none{
+        display: inline-block !important;
+    }
+    
+    
+    #toggleAsideButton {
+        display: none !important;
+    }
+    .navbar {
+        padding: 5px
+    }
+    
+    .nav-link {
+        font-size: var(--font-xsmall) !important;
+    }
+    .contact-navlink, .login-navlink{
+        display: none !important;
+    }
+
+    .cart-icon {
+        display: none !important;
+    }
+
+    .banner-principal-text {
+        font-size: var(--font-jumbo);
+        font-weight: bolder;
+    }
+
+    .banner-text-description {
+        font-size: var(--font-small);
+    }
+
+    .btn-banner-text {
+        font-size: var(--font-xsmall);
+    }
+
+    .text-main-section {
+        width: 40vw;
+        height: auto;
+        padding: 0 10px;
+        margin-bottom: 10px;
+    }
+
+    .img-main {
+        width: 40vw;
+    }
+
+    .tittle-main-item {
+        font-size: var(--font-xlarge);
+        font-weight: bolder;
+    }
+
+    .text-main-section .description-main-item {
+        font-size: var(--font-small);
+    }
+
+    .see-collection {
+        font-size: var(--font-xsmall);
+        padding: 10px 15px;
+    }
+
+    .releases-tittle {
+        font-size: var(--font-xlarge);
+        font-weight: bolder;
+
+    }
+
+}
+
+.see-collection:hover{
+    background-color: #30343F;
 }

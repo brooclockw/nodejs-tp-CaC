@@ -17,19 +17,19 @@
     <body>
       <!-- INICIO HEADER con BOOTSTRAP -->
       <header class="sticky-top">
-        <nav class="navbar navbar-dark navbar-expand-md">
-          <div class="container-fluid d-flex align-items-center">
+        <nav class="navbar navbar-dark navbar-expand-md justify-content-evenly">
+          <div class="container-fluid d-flex align-items-center justify-content-sm-between">
             <a href="./index.html">
               <img
                 src="./resources/images/branding/logo_light_horizontal.svg"
                 alt="Isologotipo de la marca Funkoshop"
                 width="auto"
                 height="25"
-                class="d-inline-block"
+                class="d-inline-block mobile-logo"
               />
             </a>
             <button
-              class="navbar-toggler align-items-center"
+              class="navbar-toggler align-items-center "
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -50,13 +50,13 @@
                       >HOME</a
                     >
                   </li>
-                  <li class="nav-item custom-navtext">
+                  <li class="nav-item custom-navtext contact-navlink">
                     <a class="nav-link" href="./resources/pages/contact.html">CONTACTO</a>
                   </li>
-                  <li class="nav-item custom-navtext">
+                  <li class="nav-item custom-navtext ">
                     <a class="nav-link" href="./resources/pages/shop.html">SHOP</a>
                   </li>
-                  <li class="nav-item custom-navtext">
+                  <li class="nav-item custom-navtext login-navlink">
                     <a class="nav-link" href="./resources/pages/login.html">LOGIN</a>
                   </li>
                   <li class="nav-item custom-navtext">
@@ -98,7 +98,7 @@
                       </li>
                     </ul>
                   </li>
-                  <li class="nav-item custom-navtext">
+                  <li class="nav-item custom-navtext cart-icon">
                     <a class="nav-link" href=".resources/pages/cart.html">
                       <img
                         src="./resources/images/icons/cart-icon.svg"
@@ -136,8 +136,8 @@
               <p class="banner-text-description">
                 Descubrí el próximo Funko Pop de tu colección
               </p>
-              <button type="button" id="btn-banner">
-                <a class="" href="./pages\shop.html">Shop</a>
+              <button class="btn-banner-text" type="button" id="btn-banner">
+                <a class="btn-banner-text" href="./resources/pages/shop.html">Shop</a>
               </button>
             </div>
           </article>
@@ -148,7 +148,7 @@
         <main>
           <section class="main-section">
             <article class="text-main-section">
-              <h3 class="tittle-main-item">Star Wars & The Mandalorian</h3>
+              <h3 class="tittle-main-item">Star Wars </h3>
               <p class="description-main-item">
                 Disfruta de una saga que sigue agregando personajes a su
                 colección.
@@ -172,7 +172,7 @@
                 amigos.
               </p>
               <div class="line-section"></div>
-              <a class="see-collection" href="./pages/shop.html">VER COLECCIÓN</a>
+              <a class="see-collection" href="./resources/pages/shop.html">VER COLECCIÓN</a>
             </article>
   
             <picture class="img-main">
@@ -189,7 +189,7 @@
                 Revive los recuerdos de una saga llena de magia y encanto.
               </p>
               <div class="line-section"></div>
-              <a class="see-collection" href="./pages/shop.html">VER COLECCIÓN</a>
+              <a class="see-collection" href="./resources/pages/shop.html">VER COLECCIÓN</a>
             </article>
             <picture class="img-main">
               <img
@@ -204,20 +204,20 @@
         <!-- INICIO LANZAMIENTOS -->
         <section class="new-releases container-fluid">
           <h2 class="releases-tittle">Últimos lanzamientos</h2>
-          <ul class="d-flex row container-fluid justify-content-evenly">
-            <li class="col-4">
-              <article>
+          <ul class="d-flex row container-fluid justify-content-evenly releases-articles">
+            <li class="col-4 ">
+              <article class="">
                 <a
                   href="./pages/item.html"
-                  class="d-flex container-fluid row justify-content-center text-releases"
+                  class="d-flex container-fluid row justify-content-center releases-items text-releases"
                 >
-                  <picture class="col-12">
+                  <picture class="col-12 img-releases">
                     <img
                       src="./resources/images/star-wars/trooper-1.webp"
                       alt="Figura coleccionable Funko de un  Stormtrooper"
                     />
                   </picture>
-                  <div class="col-12">
+                  <div class="col-12 tittle-releases">
                     <p class="text-collection">STAR WARS</p>
                     <h4 class="name-item">STORMTROOPER LIGHTSABER</h4>
                     <p>$ 1799,99</p>
@@ -269,6 +269,33 @@
               </article>
             </li>
           </ul>
+
+
+          <!-- ------ NUEVOS LANZAMIENTOS PARA MOBILE WEB SITE-------------------- -->
+
+          <ul class="releases-articles-sm container-fluid">
+            <li class="d-flex container-fluid">
+              <article class="col-12">
+                <a
+                  href="./pages/item.html"
+                  class="d-flex container-fluid column justify-content-center releases-items text-releases"
+                >
+                  <picture class="col-5 img-releases">
+                    <img
+                      src="./resources/images/star-wars/trooper-1.webp"
+                      alt="Figura coleccionable Funko de un  Stormtrooper"
+                    />
+                  </picture>
+                  <div class="col-7 tittle-releases">
+                    <p class="text-collection">STAR WARS</p>
+                    <h4 class="name-item">STORMTROOPER LIGHTSABER</h4>
+                    <p class="price-item">$ 1799,99</p>
+                    <p class="ctas-item">3 CUOTAS SIN INTERÉS</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+          </ul>
         </section>
         <!--FIN LANZAMIENTOS -->
       </main>
@@ -279,16 +306,16 @@
             <nav class="d-flex row align-items-center container-fluid">
               <ul class="mb-0 col-8 custom-text-footer">
                 <li class="nav-item custom-navtext">
-                  <a class="nav-link" href="">SHOP</a>
+                  <a class="nav-link footer-link" href="">SHOP</a>
                 </li>
                 <li class="nav-item custom-navtext">
-                  <a class="nav-link" href="">REGISTRARSE</a>
+                  <a class="nav-link footer-link" href="">REGISTRARSE</a>
                 </li>
                 <li class="nav-item custom-navtext">
-                  <a class="nav-link" href="">LOGIN</a>
+                  <a class="nav-link footer-link" href="">LOGIN</a>
                 </li>
                 <li class="nav-item custom-navtext">
-                  <a class="nav-link" href="">CONTACTO</a>
+                  <a class="nav-link footer-link" href="">CONTACTO</a>
                 </li>
               </ul>
               <picture class="d-inline-block col-3 align-items-end">
@@ -302,7 +329,7 @@
               </picture>
             </nav>
           </section>
-          <p class="container-fluid row justify-content-center">
+          <p class="container-fluid row justify-content-center copyright-text">
             All rights reserved 2023 - Funkoshop & copyright
           </p>
         </div>
