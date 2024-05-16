@@ -1,25 +1,20 @@
-window.addEventListener('load', function() {
+window.addEventListener('resize', function() {
   const aside = document.getElementById('filter-aside');
   const windowWidth = window.innerWidth;
-
+  const btnFilter = document.getElementById('toggleAsideButton');
   // Si el ancho de la ventana es menor que el breakpoint del menú hamburguesa (por ejemplo, 768px)
-  if (windowWidth < 776) {
+  if (windowWidth < 768) {
     aside.classList.add('d-none');
-  } else {
+    btnFilter.classList.remove('d-none');
+  } else if(windowWidth < 992) {
+    aside.classList.add('d-none');
+    btnFilter.classList.remove('d-none');
+  }else{
     aside.classList.remove('d-none');
+    btnFilter.classList.add('d-none');
   }
 });
-window.addEventListener('resize', function() {
-    const aside = document.getElementById('filter-aside');
-    const windowWidth = window.innerWidth;
 
-    // Si el ancho de la ventana es menor que el breakpoint del menú hamburguesa (por ejemplo, 768px)
-    if (windowWidth > 776 ) {
-      btnFilter.classList.add('d-none');
-    } else {
-      btnFilter.classList.remove('d-none');
-    }
-  });
   //------------------------------------------------------------------------------------------------------//
   const asideFilter = document.getElementById('filter-aside');
   const btnFilter = document.getElementById('toggleAsideButton');

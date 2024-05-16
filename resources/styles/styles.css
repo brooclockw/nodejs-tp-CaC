@@ -311,17 +311,17 @@ li+a+.nav-item {
 
 @media (max-width: 480px) {
     #card-shop {
-        padding: 0%;
-        width: 95%;
+        padding: 0% !important;
+        width: 95% !important;
       }
       #card-shop .row {
-            flex-wrap: wrap;
+            flex-wrap: wrap !important;
             display: block !important;
             height: 30% !important;
       }
       #card-shop .col-4 {
-            flex: 0 0 100%;
-            max-width: 100%;
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
             width: 95% !important;
             
       }
@@ -330,7 +330,7 @@ li+a+.nav-item {
             display: block !important;
       }
       .d-none{
-          display: block !important;
+          display: none !important;
       }
     .navbar {
         padding: 10px
@@ -441,20 +441,20 @@ li+a+.nav-item {
 
 @media (min-width: 481px) and (max-width: 767px) {
     .navbar {
-        padding: 15px
+        padding: 15px !important
     }
     #card-shop {
-        padding: 0%;
-        width: 95%;
+        padding: 0% !important;
+        width: 95% !important;
       }
       #card-shop .row {
-            flex-wrap: wrap;
+            flex-wrap: wrap !important;
             display: block !important;
             height: 30% !important;
       }
       #card-shop .col-4 {
-            flex: 0 0 100%;
-            max-width: 100%;
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
             width: 95% !important;
             
       }
@@ -473,12 +473,12 @@ li+a+.nav-item {
         width: 25% !important;
     }
     .d-none{
-        display: inline-block !important;
+        display: none !important;
     }
     
     
     #toggleAsideButton {
-        display: none !important;
+        display: block !important;
     }
     .navbar {
         padding: 5px
@@ -541,6 +541,57 @@ li+a+.nav-item {
 
 }
 
+.d-none{
+    display: inline-block !important;
+}
+
+
+#toggleAsideButton {
+    display: none ;
+}
 .see-collection:hover{
     background-color: #30343F;
+}
+/* SHOP PAGE STYLES  */
+/* ASIDE SECTION  */
+.aside-section-shop {
+    margin-top: 65px;
+    margin-left: 25px;
+    /* padding: 25px;
+    height: 45vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: var(--dark-solid);
+}
+
+#search-icon {
+    width: 20px;
+    display: inline;
+}
+
+.aside-text {
+    font-size: var(--font-medium);
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.filter-check-shop {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: stretch;
+    padding: 5px;
+}
+
+.check-shop-item {
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-size: var(--font-xsmall);
+}
+
+#min,
+#max {
+    font-size: var(--font-xsmall);
 }
