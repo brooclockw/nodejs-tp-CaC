@@ -293,10 +293,20 @@ li+a+.nav-item {
     margin-left: 15px;
     font-weight: normal;
 }
-h1{
+.h1_about{
+    font-size:6em ;
     text-align: center;
     color: black;
-   text-shadow: #30343F;
-   width: 100%;
+    text-shadow: #30343F;
+    width: 100%;
    
+}
+.p_about{
+    padding: 2em;
+}
+.video{
+    padding: 2em;
+}
+.h2_about{
+    text-align: center;
 }
